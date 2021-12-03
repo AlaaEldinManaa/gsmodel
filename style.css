@@ -30,7 +30,7 @@ body {
     width: 100vw;
     overflow: hidden;
     background-image: linear-gradient(to bottom right, var(--blue), #000040);
-    background-image: url("./images/pngs/Cover-home.png");
+    background-image: url("./images/final-model/11.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
