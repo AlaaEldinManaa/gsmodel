@@ -631,6 +631,11 @@ footer .copy::before {
     		height: calc(450px / 2.5);
 	}
 
+	.screenshots div img.port {
+		width: calc(450px / 2.5);
+    		height: calc(500px / 2.5);
+	}
+
 	.screenshots div.visual img {
 		width: calc(3024px / 12);
    		height: calc(4032px / 12);
