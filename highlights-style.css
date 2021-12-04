@@ -21,6 +21,7 @@
 
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 body {
@@ -51,7 +52,7 @@ body {
 	width: 100%;
 	padding: 5rem;
 	box-sizing: border-box;
-	height: 100vh;
+	height: 115vh;
 	background-repeat: no-repeat;
 	background-position: 90% center;
 	background-image: url(./images/pngs/highlights.png);
@@ -555,11 +556,12 @@ footer .copy::before {
 /* Start Media */
 @media (max-width: 535px) {
 	.header {
-		background-position: 95% 10%;
+		background-position: center 35%;
 	}
 
 	.header .header-content p {
-		width: 150%;
+		width: 100%;
+	    	margin-top: 175px;
 	}
 
 	.header .header-content button {
@@ -583,7 +585,7 @@ footer .copy::before {
 	}
 
 	.overview {
-		height: 86rem;
+		height: fit-content;
 	}
 
 	.overview .features {
@@ -593,7 +595,8 @@ footer .copy::before {
 	}
 
 	.overview .features .feature {
-		width: 85%;
+		width: 95%;
+		height: 250px;
 	}
 
 	.overview .images {
@@ -625,12 +628,13 @@ footer .copy::before {
 	}
 
 	.screenshots div img {
-		width: 100%;
+		width: calc(600px / 2.5);
+    		height: calc(450px / 2.5);
 	}
 
 	.screenshots div.visual img {
-		width: 100%;
-		height: 300px;
+		width: calc(3024px / 12);
+   		height: calc(4032px / 12);
 	}
 
 	.screenshots div p {
@@ -653,6 +657,16 @@ footer .copy::before {
 		width: 100%;
 		margin-bottom: 30px;
 	}
+	
+	footer .info .app {
+		flex-wrap: wrap;
+	}
+	
+	footer .info .app h2 {
+		width: 100%;
+		height: 50px;
+	}	
+	
 	footer .info .contact {
 		justify-content: space-around;
 	}
